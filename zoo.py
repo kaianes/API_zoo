@@ -26,7 +26,21 @@ class Animal:
         print(f"{self.nome} é um(a) {self.especie} e está com nível de felicidade {self.nivel_felicidade}.")
 
 
-# Criação de Recintos para abrigar os animais, contendo um ou mais animais que só podem ser da mesma espécie. Esses recintos podem ser  bem ou mal cuidados, dependendo se forem limpos não. 
+# Criação de Recintos para abrigar os animais, contendo um ou mais animais que só podem ser da mesma espécie. Esses recintos podem ser  bem ou mal cuidados, dependendo se forem limpos não.
+
+class Recinto:
+    def __init__(self, nome, especie):
+        self.nome = nome
+        self.especie = especie
+        self.bem_cuidado = False
+        self.animais = []
+
+    def adicionar_animal(self, nome, especie):
+        if especie == self.especie:
+            self.animais.append(nome)
+
+    def limpar_recinto(self):
+        self.bem_cuidado = True 
 
 # Alimentar os Animais, sendo que isso irá tornar os animais mais ou menos felizes.
 
