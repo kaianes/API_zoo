@@ -1,4 +1,8 @@
-# Criação de Animais com nome, espécie e nível de felicidade.
+# Criação de Animais com nome, espécie e nível de felicidade. 
+
+# Os animais podem ser alimentados, brincados e indicar se estão bem cuidados com base nos atributos citados. O nível de felicidade dos animais não pode ultrapassar 100.
+
+#essa classe, foi adicionado o atributo bem_cuidado, que indica se o animal está bem cuidado ou não.
 
 class Animal:
     def __init__(self, nome, especie):
@@ -25,7 +29,6 @@ class Animal:
     def exibir_estado(self):
         print(f"{self.nome} é um(a) {self.especie} e está com nível de felicidade {self.nivel_felicidade}.")
 
-
 # Criação de Recintos para abrigar os animais, contendo um ou mais animais que só podem ser da mesma espécie. Esses recintos podem ser  bem ou mal cuidados, dependendo se forem limpos não.
 
 class Recinto:
@@ -42,6 +45,5 @@ class Recinto:
     def limpar_recinto(self):
         self.bem_cuidado = True 
 
-# Alimentar os Animais, sendo que isso irá tornar os animais mais ou menos felizes.
-
 # Receber visitantes - Esta função irá permitir que os jogadores ganhem dinheiro com base no número de visitantes que o zoológico atrai. Visitantes são atraídos por animais felizes e recintos bem cuidados.
+
