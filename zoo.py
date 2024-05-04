@@ -45,5 +45,19 @@ class Recinto:
     def limpar_recinto(self):
         self.bem_cuidado = True 
 
-# Receber visitantes - Esta função irá permitir que os jogadores ganhem dinheiro com base no número de visitantes que o zoológico atrai. Visitantes são atraídos por animais felizes e recintos bem cuidados.
+# Receber visitantes - Esta função irá permitir que os jogadores ganhem dinheiro com base no número de visitantes que o zoológico atrai.
 
+class ReceberVisitantes:
+    def __init__(self, dinheiro=0, visitantes=0):
+        self.dinheiro = dinheiro 
+        self.visitantes = visitantes
+
+    def atrair_visitantes(self, visitantes):
+        self.visitantes += visitantes
+
+    def receber_dinheiro(self):
+        self.dinheiro += self.visitantes * 10
+
+     
+
+    
