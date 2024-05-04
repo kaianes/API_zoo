@@ -5,6 +5,8 @@ class Animal:
         self.nome = nome
         self.especie = especie
         self.nivel_felicidade = 10
+        self.bem_cuidado = True  # Adicionando o atributo bem_cuidado
+
 
     def alimentar(self):
         self.nivel_felicidade += 10
@@ -15,6 +17,10 @@ class Animal:
         self.nivel_felicidade += 15
         if self.nivel_felicidade > 100:
             self.nivel_felicidade = 100
+    
+    def cuidar(self):
+        if self.nivel_felicidade < 70:
+            self.bem_cuidado = False
 
     def exibir_estado(self):
         print(f"{self.nome} é um(a) {self.especie} e está com nível de felicidade {self.nivel_felicidade}.")

@@ -27,6 +27,12 @@ def test_limite_felicidade():
         animal.brincar()
     assert animal.nivel_felicidade == 100  # O nível de felicidade não pode ultrapassar 100
 
+# Teste para garantir que o método cuidar define bem_cuidado corretamente
+def test_cuidar():
+    animal = Animal("Peter", "Gato Frajola")
+    animal.cuidar()
+    assert animal.bem_cuidado == False  # O animal está bem cuidado
+
 # Teste para garantir que o método exibir_estado retorna a string correta
 def test_exibir_estado(capfd):
     animal = Animal("Peter", "Gato Frajola")
