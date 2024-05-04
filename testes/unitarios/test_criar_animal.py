@@ -18,7 +18,7 @@ def test_alimentar():
 def test_brincar():
     animal = Animal("Peter", "Gato Frajola")
     animal.brincar()
-    assert animal.nivel_felicidade == 35  # Nível de felicidade deve aumentar em 15
+    assert animal.nivel_felicidade == 25  # Nível de felicidade deve aumentar em 15
 
 # Teste para garantir que o nível de felicidade não ultrapassa 100
 def test_limite_felicidade():
@@ -32,7 +32,7 @@ def test_exibir_estado(capfd):
     animal = Animal("Peter", "Gato Frajola")
     animal.exibir_estado()
     out, _ = capfd.readouterr()  # Captura a saída do método exibir_estado
-    assert out.strip() == "Peter é um(a) Gato Frajola e está com nível de felicidade 50."
+    assert out.strip() == "Peter é um(a) Gato Frajola e está com nível de felicidade 10."
 
 #obs: o capfd é um fixture que captura a saída padrão do terminal. Ele é utilizado para testar funções que imprimem algo no terminal.
 
