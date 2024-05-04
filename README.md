@@ -8,4 +8,6 @@
 
 3. Os **testes** unitários e de sistema estão da pasta teste.
 
+4. O arquivo '''bd.py''' simula um banco de dados
 
+5. O arquivo main.py é onde é utilizado o flask e a api da ponderada.
