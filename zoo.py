@@ -26,7 +26,7 @@ class Animal:
         print(f"{self.nome} é um(a) {self.especie} e está com nível de felicidade {self.nivel_felicidade}.")
 
 
-# Criação de Recintos para abrigar os animais, contendo um ou mais animais da mesma espécie, sendo estes bem ou mal cuidados. Pense em funções para alterar os recintos.
+# Criação de Recintos para abrigar os animais, contendo um ou mais animais que só podem ser da mesma espécie. Esses recintos podem ser  bem ou mal cuidados, dependendo se forem limpos não. 
 
 # Alimentar os Animais, sendo que isso irá tornar os animais mais ou menos felizes.
 
